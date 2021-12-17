@@ -195,3 +195,33 @@ import string
 # print(alphabet)
 # print(sorted(alphabet.items(), key=lambda x: x[1], reverse=True))
 # print( ''.join(input).count('K'))
+# ----------------------------------------------------
+# 3365
+# f = open('3365.txt').read()
+# cur = ''
+# max_str = ''
+# for i in range(len(f)-1):
+#     if f[i+1] > f[i]:
+#         cur += f[i]
+#     else:
+#         # max_str = max(cur, max_str, key=len)
+#         if len(cur) > len(max_str):
+#             max_str = cur + f[i]
+#         cur = ''
+# print(max_str)
+# -----------------------------------------------
+# 3750
+# import string
+# f = open('3750.txt').read()
+# alphabet = string.ascii_uppercase
+# dict = dict(zip(alphabet, [0] * len(alphabet)))
+# for i in range(1, len(f)-1):
+#     if f[i-1] == f[i+1]:
+#         dict[f[i]] += 1
+# res = sorted(dict.items(), key=lambda x: x[1], reverse=True)
+# print(res[0][0] + str(res[0][1]))
+
+
+
+
+
